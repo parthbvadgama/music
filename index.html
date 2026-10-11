@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MusicHub - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+             MusicHub
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="#">Songs</a>
+            </li>
+
+            <li>
+                <a href="#">Artists</a>
+            </li>
+
+            <li>
+                <a href="#">Categories</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>Feel The Music</h1>
+
+        <p>
+            Listen to your favourite music anytime
+        </p>
+
+        <button onclick="showMessage()">
+            Explore Music
+        </button>
+
+    </section>
+
+
+    <!-- Popular Songs -->
+
+    <section class="songs">
+
+        <h2>Popular Songs</h2>
+
+
+        <div class="song-container">
+
+
+            <!-- Song 1 -->
+
+            <div class="song-card">
+
+                <div class="song-img">
+                    <img src="img1.jpg" height="100" width="100"> 
+                </div>
+		
+                <h3 id="title1">
+                    Song One
+  	              </h3>
+
+                <p id="artist1">
+                    Artist One
+                </p>
+
+                <button onclick="selectSong(0)">
+                    Play
+                </button>
+
+            </div>
+
+
+            <!-- Song 2 -->
+
+            <div class="song-card">
+
+                <div class="song-img">
+                    <img src="img2.jpg" height="100" width="100"> 
+                </div>
+
+                <h3 id="title2">
+                    Song Two
+                </h3>
+
+                <p id="artist2">
+                    Artist Two
+                </p>
+
+                <button onclick="selectSong(1)">
+                    Play
+                </button>
+
+            </div>
+
+
+            <!-- Song 3 -->
+
+            <div class="song-card">
+
+                <div class="song-img">
+                    <img src="img3.jpg" height="100" width="100">
+                </div>
+
+                <h3 id="title3">
+                    Song Three
+                </h3>
+
+                <p id="artist3">
+                    Artist Three
+                </p>
+
+                <button onclick="selectSong(2)">
+                    Play
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         REAL MUSIC PLAYER
+    ========================== -->
+
+    <section class="music-player">
+
+        <h2>Music Player</h2>
+
+
+        <h3 id="currentSong">
+            Song One
+        </h3>
+
+        <p id="currentArtist">
+            Artist One
+        </p>
+
+
+        <!-- Audio -->
+
+        <audio id="audio"></audio>
+
+
+        <!-- Progress -->
+
+        <div class="progress-box">
+
+            <span id="currentTime">
+                0:00
+            </span>
+
+            <input
+                type="range"
+                id="progress"
+                value="0"
+                min="0"
+                max="100"
+            >
+
+            <span id="duration">
+                0:00
+            </span>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="player-buttons">
+
+            <button onclick="previousSong()">
+               <img src="img4.png" height="50" width="50">
+            </button>
+
+            <button
+                onclick="playPause()"
+                id="playButton"
+                class="main-play"
+            >
+            </button>
+
+            <button onclick="nextSong()">
+               <img src="img5.jpg" height="50" width="50">
+            </button>
+
+        </div>
+
+
+        <!-- Volume -->
+
+        <div class="volume">
+          <img src="volume.jpg" height="20" width="20">
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 MusicHub | College Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

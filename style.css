@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+/* Navbar */
+
+nav {
+    height: 70px;
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4d88;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #ff4d88;
+}
+
+/* Hero */
+
+.hero {
+    height: 400px;
+    text-align: center;
+    padding-top: 120px;
+    background: linear-gradient(135deg, #25002e, #111111);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d88;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Songs */
+
+.songs {
+    padding: 50px;
+}
+
+.songs h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.song-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.song-card {
+    width: 250px;
+    background: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.song-img {
+    height: 180px;
+    background: #333333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.song-card h3 {
+    margin-top: 15px;
+}
+
+.song-card p {
+    color: #aaaaaa;
+    margin: 8px;
+}
+
+.song-card button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #ff4d88;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1e1e1e;
+    margin-top: 30px;
+}	
+/* =========================
+   REAL MUSIC PLAYER
+========================= */
+
+.music-player {
+
+    width: 90%;
+
+    max-width: 650px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    background: #1e1e1e;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.music-player h2 {
+
+    color: #ff4d88;
+
+    margin-bottom: 20px;
+
+}
+
+
+#currentSong {
+
+    font-size: 25px;
+
+    margin-bottom: 5px;
+
+}
+
+
+#currentArtist {
+
+    color: #aaaaaa;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Progress */
+
+.progress-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.progress-box span {
+
+    font-size: 13px;
+
+    color: #aaaaaa;
+
+    width: 40px;
+
+}
+
+
+#progress {
+
+    width: 100%;
+
+    cursor: pointer;
+
+    accent-color: #ff4d88;
+
+}
+
+
+/* Player Buttons */
+
+.player-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 25px;
+
+}
+
+
+.player-buttons button {
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #333333;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+}
+
+
+.player-buttons button:hover {
+
+    background: #ff4d88;
+
+}
+
+
+.player-buttons .main-play {
+
+    width: 65px;
+
+    height: 65px;
+
+    background: #ff4d88;
+
+    font-size: 25px;
+
+}
+
+
+/* Volume */
+
+.volume {
+
+    margin-top: 25px;
+
+}
+
+
+#volume {
+
+    width: 150px;
+
+    accent-color: #ff4d88;
+
+    cursor: pointer;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .music-player {
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+    .player-buttons {
+
+        gap: 15px;
+
+    }
+}
